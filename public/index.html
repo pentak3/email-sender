@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Email Sender</title>
+	
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="container">
+	<h1>Awesome Email Sender</h1>
+	<h4>Your can send <u>FREE</u> Emails ;)</h4>
+	<hr/>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<div class="page"></div>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</div>
+
+<script type="text/template" id="email-form-template">
+
+<form class="email-form" role="form">
+	<legend>Sender Info</legend>
+	<div class="form-group">
+		<label>Your Name</label>
+		<input type="text" class="form-control" name="fromName" placeholder="Enter Your Name" />
+		<span class="help-block hidden"></span>
+	</div>
+	<div class="form-group">
+		<label>Your Email</label>
+		<input type="email" class="form-control" name="fromEmail" placeholder="Enter Your Email" />
+		<span class="help-block hidden"></span>
+	</div>
+	<legend>Receiver Info</legend>
+	<div class="form-group">
+		<label>Name</label>
+		<input type="text" class="form-control" name="toName" placeholder="Receiver Name" />
+		<span class="help-block hidden"></span>
+	</div>
+	<div class="form-group">
+		<label>Email</label>
+		<input type="email" class="form-control" name="toEmail" placeholder="Receiver Email" />
+		<span class="help-block hidden"></span>
+	</div>
+	<div class="form-group">
+		<label>Subject</label>
+		<input type="text" class="form-control" name="subject" placeholder="Subject" />
+		<span class="help-block hidden"></span>
+	</div>
+	<div class="form-group">
+		<label>Content to Send</label>
+		<textarea class="form-control" name="content" placeholder="Feel free to write anything"></textarea>
+		<span class="help-block hidden"></span>
+	</div>
+	<hr/>
+	<div class="form-group">
+		<button type="submit" class="btn btn-primary">Send Email</button>
+	</div>
+</form>
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/underscore.min.js"></script>
+<script type="text/javascript" src="/js/backbone.min.js"></script>
+<script type="text/javascript" src="/js/backbone-validation.min.js"></script>
+<script type="text/javascript" src="/js/page.js"></script>
+
+</body>
+</html>
